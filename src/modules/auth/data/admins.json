@@ -1,0 +1,19 @@
+[
+    {
+      "id": "admin_1",
+      "login": "admin",
+      "email": "admin@example.com",
+      "displayName": "Main Administrator",
+      "passwordHash": "$2a$10$9P2pJ8HhIY7YzQpQ7tHLxu3xWcCSc3ErqXhzT25qG/ahOi1Fd1hKu" 
+  
+    },
+    {
+      "id": "support_1",
+      "login": "support",
+      "email": "support@example.com",
+      "displayName": "Support Manager",
+      "passwordHash": "$2a$10$0ZKpkTke6QzEmYQ8Lz5tYu6MVs/HX8b7i5XQxSk4ZdrmJXKxVuJmK" 
+      
+    }
+  ]
+  

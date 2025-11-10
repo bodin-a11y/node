@@ -4,10 +4,23 @@ export class AppError extends Error {
       public message: string,
       public httpStatus = 400,
       public details?: unknown,
+      public cause?: unknown, // опционально: родная причина
     ) {
       super(message);
+      this.name = 'AppError';
+      Object.setPrototypeOf(this, new.target.prototype);
+      // если поддерживается — сохраняем cause в Error
+      // @ts-ignore
+      if (this.cause && (Error as any).captureStackTrace) {
+        (Error as any).captureStackTrace(this, AppError);
+      }
+    }
+  
+    static BadRequest(msg: string, code = 'BAD_REQUEST', details?: unknown) {
+      return new AppError(code, msg, 400, details);
     }
   }
+  
   
   export const Errors = {
     Unauthorized: () =>
