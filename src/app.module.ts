@@ -2,21 +2,22 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
 // Глобальные модули и подсистемы
-import { SharedModule } from '../shared/shared.module';
-import { HealthModule } from '../health/health.module';
+import { SharedModule } from './shared/shared.module';
+import { HealthModule } from './health/health.module';
 
 // Бизнес-модули
-import { AuthModule } from '../modules/auth/auth.module';
-import { AdminsModule } from '../modules/admins/admins.module';
-import { PlanfixModule } from '../modules/planfix/planfix.module';
-import { WarrantyModule } from '../modules/warranty/warranty.module';
-import { TelegramModule } from '../modules/telegram/telegram.module';
-import { WebhooksModule } from '../modules/webhooks/webhooks.module';
-import { ThingsboardModule } from '../modules/thingsboard/thingsboard.module';
+import { AuthModule } from './modules/auth/auth.module';
+// import { AdminsModule } from './modules/admins/admins.module';
+// import { PlanfixModule } from './modules/planfix/planfix.module';
+// import { WarrantyModule } from './modules/warranty/warranty.module';
+// import { TelegramModule } from './modules/telegram/telegram.module';
+// import { WebhooksModule } from './modules/webhooks/webhooks.module';
+// import { ThingsboardModule } from './modules/thingsboard/thingsboard.module';
 
 // Конфиги и валидация окружения
 import planfixConfig from './config/planfix.config';
 import { envSchema } from './config/env.validation';
+import { PlanfixModule } from './modules/planfix/services/planfix.module';
 
 @Module({
   imports: [

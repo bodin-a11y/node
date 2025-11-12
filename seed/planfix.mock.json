@@ -1,0 +1,41 @@
+{
+    "warranties": [
+      {
+        "id": "w1",
+        "qr": "SONMAR-QR-0001",
+        "status": "active",
+        "createdAt": "2025-11-01T10:00:00.000Z",
+        "buyerContactId": "c1"
+      },
+      {
+        "id": "w2",
+        "qr": "SONMAR-QR-0002",
+        "status": "active",
+        "createdAt": "2025-11-01T11:00:00.000Z"
+      }
+    ],
+    "bonuses": [
+      {
+        "id": "bonus_seller_w1_20251101",
+        "warrantyId": "w1",
+        "role": "seller",
+        "amount": 100,
+        "createdAt": "2025-11-01T12:00:00.000Z"
+      }
+    ],
+    "contacts": [
+      {
+        "id": "c1",
+        "phone": "+380671234567",
+        "email": "buyer@sonmar.com",
+        "name": "Іван Покупець"
+      },
+      {
+        "id": "c2",
+        "phone": "+380991112233",
+        "email": "seller@sonmar.com",
+        "name": "Олег Продавець"
+      }
+    ]
+  }
+  
