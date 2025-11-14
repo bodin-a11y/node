@@ -134,9 +134,10 @@ export class PlanfixGatewayMock extends IPlanfixGateway {
     const created: Warranty = {
       id: randomUUID(),
       qr: dto.qr,
-      status: 'active',
+      status: 'draft',            
       createdAt: new Date().toISOString(),
     };
+    
 
     db.warranties.push(created);
     await this.write(db);

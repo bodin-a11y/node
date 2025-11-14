@@ -1,8 +1,8 @@
 // src/modules/planfix/services/planfix.module.ts
 
 import { Module, Provider } from '@nestjs/common';
-import { IPlanfixGateway } from '../client/planfix.gateway';
-import { PlanfixGatewayMock } from '../client/planfix.gateway.mock';
+import { IPlanfixGateway } from './client/planfix.gateway';
+import { PlanfixGatewayMock } from './client/planfix.gateway.mock';
 // Реальную реализацию подключим позже:
 // import { PlanfixGatewayReal } from '../client/planfix.gateway.real';
 

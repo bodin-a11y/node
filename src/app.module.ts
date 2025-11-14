@@ -17,7 +17,7 @@ import { AuthModule } from './modules/auth/auth.module';
 // Конфиги и валидация окружения
 import planfixConfig from './config/planfix.config';
 import { envSchema } from './config/env.validation';
-import { PlanfixModule } from './modules/planfix/services/planfix.module';
+import { PlanfixModule } from './modules/planfix/planfix.module';
 
 @Module({
   imports: [

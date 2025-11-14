@@ -1,6 +1,11 @@
 // src/modules/planfix/client/planfix.types.ts
 
-export type WarrantyStatus = 'active' | 'expired';
+export type WarrantyStatus =
+  | 'draft'              // создан продавцом, но не оформлен
+  | 'pending_activation' // покупатель ещё не активировал
+  | 'active'             // покупатель активировал
+  | 'expired';           // не активирован 14 дней
+
 
 export interface Warranty {
   id: string;              // Идентификатор сущности в Planfix (напр., taskId)

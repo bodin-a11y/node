@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { PlanfixModule } from '../planfix/services/planfix.module';
+import { PlanfixModule } from '../planfix/planfix.module';
 import { WarrantyController } from './controllers/warranty.controller';
 import { BuyerController } from './controllers/buyer.controller';
 import { SellerController } from './controllers/seller.controller';
